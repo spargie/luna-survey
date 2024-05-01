@@ -1,0 +1,146 @@
+** start of undefined **
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Survey Form</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Underdog&display=swap" rel="stylesheet">
+    
+  </head>
+  <body>
+    <h1 id="title">Luna's Survey Form</h1>
+    <p id="description">Please let us know what you think about the wrold's cutest doggo.</p>
+    <form id="survey-form">
+      
+      <fieldset>
+      <label id="name-label" for="name">Name <input id="name" type="text" placeholder="Enter your name" name="name" required></label>
+      <label id="email-label" for="email">Email <input id="email" type="email" placeholder="Enter your email" name="email" required></label>
+      <label id="number-label" for="number">Age <input id="number" type="number" placeholder="Age" min="12" max="120" name="number"></label>
+      </fielset>
+      
+      <fielset>
+        <label for="dropdown">What is Luna's favourite thing to do?
+          <select id="dropdown" name="dropdown">
+            <option value="">(select one)</option>
+            <option value="1">Chase squirrels in the forrest</option>
+            <option value="2">Catch her ball in the park</option>
+            <option value="3">Bark at foxes on the balcony</option>
+            <option value="4">Lamby in the lounge</option>
+          </select>
+        </label>
+      </fieldset>
+      
+      <fielset>
+        <legend>How would you describe Luna?</legend>
+        <label for="cute"><input class="inline" id="cute" name="personailty" type="radio" value="cute" name="cute" checked /> Cute</label>
+        <label for="playful"><input class="inline" id="playful" name="personailty" type="radio" value="playful" name="playful" /> Playful</label>
+        <label for ="sassy"><input class="inline" id="sassy" name="personailty" type="radio" value="sassy" name="sassy" /> Sassy</label>
+        <label for="all-of-the-above"><input class="inline" id="all-of-the-above" name="personailty" type="radio" value="all-of-the-above" name="all-of-the-above" /> All of the above</label>
+      </fieldset>
+
+      <fielset>
+        <legend>List of people who might love Luna:</legend>
+        <label for="mum"><input class="inline" id="mum" name="person" type="checkbox" value="mum" /> Mum</label>
+        <label for="dad"><input class="inline" id="dad" name="person" type="checkbox" value="dad" /> Dad</label>
+        <label for="aunty-shay"><input class="inline" id="aunty-shay" name="person" type="checkbox" value="aunty-shay" /> Aunty Shay</label>
+        <label for="other-dogs"><input class="inline" id="other-dogs" name="person" type="checkbox" value="other-dogs" /> Other dogs</label>
+        <label for="neighbours"><input class="inline" id="neighbours" name="person" type="checkbox" value="neighbours" /> Neighbours</label>
+        <label for="cats"><input class="inline" id="cats" name="person" type="checkbox" value="cats" /> Cats</label>
+        <label for="foxes"><input class="inline" id="foxes" name="person" type="checkbox" value="foxes" /> Foxes</label>
+        <label for="steve"><input class="inline" id="steve" name="person" type="checkbox" value="steve" /> A man named Steve</label>
+      </fieldset>
+
+      <fieldset>
+        <label for="reasons">Tell Luna why you love her: <textarea id="reasons" rows="3" cols="30" placeholder="I love Luna because she is fluffy..." name="reasons"></textarea></label>
+      </fieldset>
+
+    <input id="submit" type="submit" value="Submit" name="submit">
+    
+    </form>
+  </body>
+
+
+
+</html>
+
+** end of undefined **
+
+** start of undefined **
+
+body {
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  background-color: #ffe5ec;
+  color: #003049;
+  font-family: "Underdog", system-ui;
+  font-size: 16px;
+}
+
+h1, p {
+  margin: 1em auto;
+  text-align: center;
+  border: 2px solid #ff006e;
+  border-radius: 10px;
+  max-width:500px;
+  min-width:300px;
+}
+
+form {
+  margin: 0 auto;
+  max-width: 500px;
+  min-width: 300px;
+  width: 60vw;
+  padding-bottom: 2em;
+}
+
+fieldset {
+  border: none;
+  border-bottom: 3px solid #ff006e;
+  padding: 2rem 0;
+}
+
+fieldset:last-of-type {
+  border-bottom: none;
+}
+
+label {
+  display: block;
+  margin: 0.5rem 0;
+}
+
+input, textarea, select {
+  width: 100%;
+  margin: 10px 0 0 0;
+  border: 2px solid #ff006e;
+  border-radius: 10px;
+  background-color: #003049;
+  color: #ffe5ec;
+  min-height: 2em;
+}
+
+.inline {
+  width: unset;
+  margin: 0 0.5em 0 0;
+  vertical-align: middle;
+}
+
+input[type="submit"] {
+  display: block;
+  width: 60%;
+  margin: 0 auto;
+  height: 2em;
+  font-size: 1.1rem;
+  background-color: #ff006e;
+  border: 2px solid #003049;
+  min-width: 300px;
+  margin: 1em auto;
+}
+
+
+** end of undefined **
+
